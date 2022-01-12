@@ -36,10 +36,6 @@ pipeline {
         }
     }   
 }
-
-
-
-
 stage ('DeployToProduction') {
     when {
         branch 'master'
@@ -62,4 +58,3 @@ stage ('DeployToProduction') {
     }
 }
 
-<PRODUCTION_SERVER_PUBLIC_IP_ADDRESS>:8080
