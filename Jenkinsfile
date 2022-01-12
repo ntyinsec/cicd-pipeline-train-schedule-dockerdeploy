@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("ntyinsec/train-schedule")
+                    app = docker.build("ntyinsec1/train-schedule")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
                     }
